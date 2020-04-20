@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-elements{
+    font-weight: 600;
+    font-size: large;
+    padding-right: 5%;
+}
+
+
+.hero{
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.hero-title{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20%;
+}
+
+.hero-img{
+    margin-top: 10%;
+    margin-left: -15%;
+    height: 75%;;
+}
+
+
+.btn{
+    margin-top: 14%;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+
+.about{
+
+    background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100vh;
+    width: 100%;
+    background-position: cover;
+
+}
+
+.about-title{
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    font-weight: 500;
+}
+.about-img{
+    margin-top: -2%;
+    height: 40%;
+    margin-left: -25%;
+}
+
+.about-content{
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 22px;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+   .hero-img{
+       margin-left: 12%;
+    
+       height: 45%;
+   }
+   .hero-title{
+    margin-top: -35%;
+    }   
+    .about-img{
+        align-items: center;
+        height: 30%;
+        margin-left: 5%;
+    }
+    
+    .about-content{
+        margin-top: -145%;
+        font-weight: 400;
+        font-size: 20px;
+    
+
+  }
