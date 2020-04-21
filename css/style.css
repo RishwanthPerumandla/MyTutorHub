@@ -83,7 +83,7 @@ background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, F
     .about-img{
         align-items: center;
         height: 30%;
-        margin-left: 5%;
+        margin-left: 4%;
     }
     
     .about-content{
