@@ -70,6 +70,28 @@ background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, F
 
 }
 
+.redirection{
+    height: 90vh;
+    width: 100%;
+    background-position: cover;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+
+
+}
+
+.redirected{
+    color:#C4E0E5 ;
+ 
+}
+
 
 @media only screen and (max-width: 768px) {
    .hero-img{

@@ -96,7 +96,7 @@
       }
       .week {
       display:flex;
-      justfiy-content:space-between;
+      justify-content:space-between;
       }
       .colums {
       display:flex;
@@ -203,8 +203,12 @@
     </style>
   </head>
   <body>
+     
+
+
+
     <div class="testbox">
-      <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+      <form id="form" target="_self" onsubmit="window.location.href = 'redirected.html';return postToGoogle();" action="" autocomplete="off">
         <div class="banner">
           <h1>Tutor Registration</h1>
         </div>
@@ -216,7 +220,7 @@
           <div class="item">
             <label for="subject">Subject Expertise(Ex: Science, Maths Etc)<span>*</span></label>
             <input id="subject" type="text"   name="entry.756906552" placeholder="Enter your Subject Expertise" required/>
-          </div> 
+          </div> s
           <div class="item">
             <label for="experience"> Teaching Experience(Years)<span>*</span></label>
             <input id="experience" type="text" name="entry.1877488761" placeholder="Ex: 3 " required/>
@@ -282,9 +286,7 @@
 
      
     </div>
-    <div class="sucessmsg">
-      <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been Saved. We'll Contact you Soon</h3>
-    </div>
+    
 
 
    
@@ -354,7 +356,7 @@
                   {
       
                     $('#sucess-msg').show();
-                    $('#form').hide();
+              
                     
                   }
                       });
