@@ -4,8 +4,7 @@
     <title>GraspBetter | Platform to Find your Tutors</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <style>
+    <style>
       html, body {
       min-height: 100%;
       }
@@ -204,48 +203,68 @@
   </head>
   <body>
     <div class="testbox">
-      <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+      <form action="/">
         <div class="banner">
-          <h1>Tutor Registration</h1>
+          <h1>Student Registration</h1>
         </div>
-        <div class="colums" id="coloumss">
+        <div class="colums">
           <div class="item">
             <label for="fname"> Full Name<span>*</span></label>
-            <input id="fname" type="text" name="entry.467242977" placeholder="Enter your full name" required/>
+            <input id="fname" type="text" name="fname" required/>
           </div>
           <div class="item">
-            <label for="subject">Subject Expertise(Ex: Science, Maths Etc)<span>*</span></label>
-            <input id="subject" type="text"   name="entry.756906552" placeholder="Enter your Subject Expertise" required/>
-          </div> 
-          <div class="item">
             <label for="experience"> Teaching Experience(Years)<span>*</span></label>
-            <input id="experience" type="text" name="entry.1877488761" placeholder="Ex: 3 " required/>
+            <input id="experience" type="text" name="experience" required/>
           </div>
           <div class="item">
             <label for="qualification">Highest Qualification(Ex: PhD,M.Tech,M.sc)<span>*</span></label>
-            <input id="qualification" type="text"  name="entry.416974086" placeholder="Enter your Highest Qualification" required/>
+            <input id="qualification" type="text"  name="qualification" required/>
           </div>
+
+          <div class="item">
+            <label for="subject">Subject Expertise(Ex: Science, Maths Etc)<span>*</span></label>
+            <input id="subject" type="text"   name="subject" required/>
+          </div>  
           <div class="item">
             <label for="organisation">Current Working Organisation<span>*</span></label>
-            <input id="organisation" type="text"  name="entry.505008509" placeholder="Enter your Current Working Organisation"required/>
-          </div>
-        
-          <div class="item">
-            <label for="email">Email Address<span>*</span></label>
-            <input id="email" type="text"   name="entry.1143497317" placeholder="Enter your Email Address"required/>
+            <input id="organisation" type="text"  name="organisation" required/>
           </div>
           <div class="item">
-            <label for="phone">Phone No<span>*</span></label>
-            <input id="phoneno" type="text"   name="entry.1259352317" placeholder="Enter your Phone Number" pattern="^\d{10}$" required/>
+            <label for="address1">Address 1<span>*</span></label>
+            <input id="address1" type="text"   name="address1" required/>
+          </div>
+          <div class="item">
+            <label for="state">State<span>*</span></label>
+            <input id="state" type="text"   name="state" required/>
+          </div>
+          <div class="item">
+            <label for="zip">Zip/Postal Code<span>*</span></label>
+            <input id="zip" type="text" name="zip" required/>
+          </div>
+          <div class="item">
+            <label for="city">City<span>*</span></label>
+            <input id="city" type="text"   name="city" required/>
+          </div>
+          <div class="item">
+            <label for="eaddress">Email Address<span>*</span></label>
+            <input id="eaddress" type="text"   name="eaddress" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Phone<span>*</span></label>
+            <input id="phone" type="tel"   name="phone" required/>
           </div>
         </div>
         <div class="question">
           <label>Tution Mode</label>
           <div class="question-answer">
-            <select id="tuitionmode" name="entry.841414811" placeholder="Select Tuition Mode" required>
-              <option value="onlinetution">Online Tuition</option>
-              <option value="hometuition">Home Tuition</option> 
-              </select> 
+            <div>
+              <input type="radio" value="none" id="radio_1" name="type"/>
+              <label for="radio_1" class="radio"><span>Home Tution</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_2" name="type"/>
+              <label for="radio_2" class="radio"><span>Online tution</span></label>
+            </div>
             
           </div>
         </div>
@@ -253,22 +272,18 @@
           <label>Preferred Area for Tutoring </label>
           <div class="question-answer">
             <div>
-              <label for="p1">Area Preference 1<span>*</span></label>
-            <input id="p1" type="text"   name="entry.1701217748"placeholder="Enter your Area Preference-1" required/>
+              <label for="p1">Preference 1<span>*</span></label>
+            <input id="p1" type="text"   name="p1" required/>
             </div>
             <div>
-              <label for="p2">Area Preference 2<span>*</span></label>
-              <input id="p2" type="text"   name="entry.1194260953" placeholder="Enter your Area Preference-2"required/>
+              <label for="p2">Preference 2<span>*</span></label>
+              <input id="p2" type="text"   name="p2" required/>
             </div>
             
           </div>
-
-          <div class="item">
-            <label for="address">Address<span>*</span></label>
-            <input id="address" type="text"   name="entry.516524251" placeholder="Enter your Address"required/>
-          </div>
         </div>
         <h2>Terms and Conditions</h2>
+        <input type="checkbox" name="checkbox1">
         <label><li>We never involves into finalizing the Tuition fees and collecting fee from Student/Parents. Tutors can speak to the Student/Parent directly and can fix the tuition fee and collect from the Student/Parents</li>
         <li>The tutor profile must contain with Tutor's latest Photograph, latest updated Resume, present residing address and valid personal Mobile number, Email ID. The Tutor warrants that his/her E-mail, Mobile Number and contact details are valid.</li>
         <li>A tutor hereby acknowledges that we are not liable to the Tutor for reimbursement of any fees paid pursuant to these Terms in the events of any cancellation of any Contract or Tuition for any reason.</li>
@@ -276,90 +291,9 @@
         <li>A tutor accepts full responsibility for all information published by him on the Website and shall indemnify oursite.com in relation to any liability incurred by them as a result of such information.</li>
         <li>We’ve reserves all the rights to change all or any of these above mentioned Terms and Conditions with or without giving any prior notice at any time.</li></label>
         <div class="btn-block">
-          <button id="send" type="submit" class="common_btn">Register Now</button>
+          <button type="submit" href="/">Submit</button>
         </div>
       </form>
-
-     
     </div>
-    <div class="sucessmsg">
-      <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been Saved. We'll Contact you Soon</h3>
-    </div>
-
-
-   
-    <script>
-      function postToGoogle() {
-                      var field1 = $("#fname").val();
-                      var field2 = $("#subject").val();
-                      var field3 = $("#experience").val();
-                      var field4 = $("#qualification").val();
-                      var field5 = $("#organisation").val();
-                      var field6 = $("#email").val();
-                      var field7= $("#phoneno").val();
-                      var field8= $("#tuitionmode option:selected").text();
-                      var field9 = $("#p1").val();
-                      var field11 = $("#p2").val();
-                      var field12 = $("#address").val();
-
-               
-              if(field1 == ""){
-                alert('Please Fill Your Name');
-                document.getElementById("fname").focus();
-                return false;
-              }
-              if(field2 == ""){
-                alert('Please Fill Your Subject Expertise');
-                document.getElementById("subject").focus();
-                return false;
-              }
-              if(field3 == ""){
-                alert('Please Fill Your Experience');
-                document.getElementById("experience").focus();
-                return false;
-              }
-              if(field4 == ""){
-                alert('Please Fill Your Qualification');
-                document.getElementById("qualification").focus();
-                return false;
-              }
-              if(field5 == ""){
-                alert('Please Fill Your organisation Name');
-                document.getElementById("organisation").focus();
-                return false;
-              }
-              if(field6 == ""){
-                alert('Please Fill Your Email');
-                document.getElementById("email").focus();
-                return false;
-              }
-              if(field7 == "" || field7.length > 10 || field7.length < 10){
-                alert('Please Fill Your Mobile Number');
-                document.getElementById("phoneno").focus();
-                return false;
-              }
-      
-      
-              
-        
-                      $.ajax({
-                          url: "https://docs.google.com/forms/d/e/1FAIpQLSdcMWxCuev24KO5OI_72Ai3LGBquQD03H03yVzvyBZd07MCbA/formResponse?",
-                data: {"entry.467242977": field1, "entry.756906552": field2, "entry.1877488761": field3, "entry.416974086": field4,"entry.505008509": field5,"entry.1143497317": field6,"entry.1259352317": field7,"entry.841414811": field8,"entry.1701217748": field9,"entry.1194260953": field11,"entry.516524251":field12},
-                          type: "POST",
-                          dataType: "xml",
-                          success: function(d)
-                {
-                },
-                error: function(x, y, z)
-                  {
-      
-                    $('#sucess-msg').show();
-                    $('#form').hide();
-                    
-                  }
-                      });
-              return false;
-                  }
-      </script>
   </body>
 </html>
