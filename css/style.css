@@ -85,6 +85,9 @@ background-image: linear-gradient(61deg, #43c6ac, #191654 100%, #0052d4);
     margin-left: 15px
 }
 
+.button:hover{
+  transform: scale(1.2);
+}
 
 .about {
   height: 100vh;
@@ -158,7 +161,11 @@ background-image: linear-gradient(61deg, #43c6ac, #191654 100%, #0052d4);
   color: #c4e0e5;
 }
 
-/* Button */
+.section-divider{
+  border: 1px;
+  height: 1px;
+  background-color: #000;
+}
 
 
   
