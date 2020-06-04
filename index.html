@@ -30,8 +30,9 @@
     />
   </head>
   <body>
- <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+    <!-- Navbar -->
+    <nav class="nav navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container">
         <a class="navbar-brand" href="#">MyTutorsHub</a>
         <button
           class="navbar-toggler"
@@ -59,44 +60,53 @@
             </li>
           </ul>
         </div>
-      </nav>
-  
+      </div>
+    </nav>
 
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/1.png" alt="Tutors" class="hero-img" />
+    <header class="hero" id="home">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6 col-sm-12 my-auto">
+            <img
+              src="img/1.png"
+              alt="Tutors"
+              class="hero-img img-fluid rounded"
+            />
           </div>
-          <div class="col-md-6 hero-title">
-            <h1>
-              A Platform for <span style="color: #142850;">Students</span> and
-              <span style="color: #142850;">Tutors</span> to Find Each Other.
-            </h1>
-            <div class="buttons">
-              <a href="#register" color="black">
-                <button class="button">Register</button></a
-              >
-              <a href="#about" color="black">
-                <button class="button">Know More</button></a
-              >
+          <div class="col-md-6 col-sm-12 hero-title my-auto">
+            <div class="header-content mx-auto">
+              <h1>
+                A Platform for <span style="color: #142850;">Students</span> and
+                <span style="color: #142850;">Tutors</span> to Find Each Other.
+              </h1>
+              <div class="hero-buttons">
+                <a href="#register" color="black">
+                  <button class="button px-md-5 btn-space">Register</button></a
+                >
+                <a href="#about" color="black">
+                  <button class="button px-md-5 btn-space">Know More</button></a
+                >
+              </div>
             </div>
           </div>
-        
         </div>
-        <hr class="section-divider">
+        <hr class="section-divider" />
       </div>
-    </section>
+    </header>
 
     <!-- about section -->
     <section class="about" id="about">
-      <div class="container" style="height: 80vh;">
+      <div class="container h-100">
         <h1 class="about-title">About MyTutorsHub</h1>
-        <div class="row" style="height: 80vh;">
-          <div class="col-md-6" style="height: 80vh;">
-            <img src="img/people-handshake.png" alt="" class="about-img" />
+        <div class="row h-100">
+          <div class="col-md-6 col-sm-12">
+            <img
+              src="img/people-handshake.png"
+              alt=""
+              class="about-img img-fluid"
+            />
           </div>
-          <div class="col-md-6" style="height: 80vh;">
+          <div class="col-md-6 col-sm-12">
             <p class="about-content">
               MyTutorsHub provides a common platform for the Tutors and the
               Students to meet up in order to satisfy their needs for their
@@ -105,56 +115,75 @@
               tutor assistance given by the City Home Tuition."
             </p>
           </div>
-        
         </div>
-        <hr class="section-divider">
-       
-      </div> <br> <br>
+        <hr class="section-divider" />
+      </div>
     </section>
 
     <section class="register" id="register">
-      <br><br>
       <h3 class="register-title">
         Register As Tutor or Student We'll get back to you!
       </h3>
-    
-        <div class="register-buttons">
-          <a href="TutorRegistration.html" color="black">
-            <button class="button">Register as Tutor</button></a
-          >
-          <a href="StudentRegistration.html" color="black">
-            <button class="button">Register as Student</button></a
-          >
-        </div>
-        
+
+      <div class="register-buttons text-center">
+        <a href="TutorRegistration.html" color="black">
+          <button class="button px-md-5 btn-space">Register as Tutor</button></a
+        >
+        <a href="StudentRegistration.html" color="black">
+          <button class="button px-md-5 btn-space">
+            Register as Student
+          </button></a
+        >
+      </div>
     </section>
-    <br><br>
-    <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark pt-4">
 
-  <!-- Footer Elements -->
-  <div class="container">
+    <section class="subjects"></section>
+    <section class="footer">
+      <!-- Footer -->
+      <footer class="page-footer font-small unique-color-dark pt-4">
+        <!-- Footer Elements -->
+        <div class="container">
+          <!-- Call to action -->
+          <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+              <h5 class="mb-1">Register for free</h5>
+            </li>
+          </ul>
+          <!-- Call to action -->
+        </div>
+        <!-- Footer Elements -->
 
-    <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
-      <li class="list-inline-item">
-        <h5 class="mb-1">Register for free</h5>
-      </li>
-    
-    </ul>
-    <!-- Call to action -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2020 Copyright:
+          <a href="index.html"> MyTutorsHub.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
 
-  </div>
-  <!-- Footer Elements -->
+    <script type="text/javascript">
+      // Scrolling Effect
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="index.html"> MyTutorsHub.com</a>
-  </div>
-  <!-- Copyright -->
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
 
-</footer>
-<!-- Footer -->
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 490) {
+            $(".black").css("background", "rgb(33,38,3b)");
+          } else {
+            $(".black").css("background", "rgba(0, 0, 0, 0.4)");
+          }
+        });
+      });
+    </script>
 
     <!-- Bootstrap JS Links -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
