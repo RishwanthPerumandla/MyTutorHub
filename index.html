@@ -29,12 +29,21 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">MyTutorsHub</a>
+        <a
+          class="navbar-brand"
+          href="#"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          >MyTutorsHub</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -64,7 +73,12 @@
 
     <header class="hero" id="home">
       <div class="container h-100">
-        <div class="row h-100">
+        <div
+          class="row h-100"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
           <div class="col-md-6 col-sm-12 my-auto">
             <img
               src="img/1.png"
@@ -96,10 +110,20 @@
     <!-- about section -->
     <section class="about" id="about">
       <div class="container h-100">
-        <h1 class="about-title">
+        <h1
+          class="about-title"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
           About <span style="color: coral;">MyTutorsHub</span>
         </h1>
-        <div class="row h-100">
+        <div
+          class="row h-100"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
           <div class="col-md-6 col-sm-12">
             <img
               src="img/people-handshake.png"
@@ -122,11 +146,16 @@
     </section>
 
     <section class="register" id="register">
-      <h3 class="register-title">
+      <h3
+        class="register-title"
+        data-aos="zoom-in-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
         Register As Tutor or Student We'll get back to you!
       </h3>
 
-      <div class="register-buttons text-center">
+      <div class="register-buttons text-center" data-aos="zoom-in">
         <a href="TutorRegistration.html" color="black">
           <button class="button px-md-5 btn-space">Register as Tutor</button></a
         >
@@ -169,6 +198,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script>
+      AOS.init();
+
       $(window).scroll(function () {
         $("nav").toggleClass("bg-dark", $(this).scrollTop() > 50);
       });
