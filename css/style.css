@@ -6,6 +6,7 @@
 }
 
 body {
+  min-height: 200vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -16,10 +17,17 @@ body {
     linear-gradient(to right, #928dab, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.bg-dark {
+  transition: 500ms ease;
+  background: rgba(85, 104, 189, 0.938) !important;
+  color: #000;
+}
+
 .nav-elements {
   font-weight: 600;
   font-size: large;
   padding-right: 5%;
+  color: #000;
 }
 
 .hero {
@@ -31,13 +39,6 @@ body {
 .hero-title {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-}
-
-.hero-img {
-}
-
-.hero-buttons {
-  display: inline;
 }
 
 .button {
@@ -55,17 +56,12 @@ body {
   transform: scale(1.12);
 }
 
-.about {
-}
-
 .about-title {
   font-family: "Advent Pro", sans-serif;
 
-  padding: 20px;
+  padding: 50px;
   font-size: 60px;
   text-align: center;
-}
-.about-img {
 }
 
 .about-content {
@@ -87,6 +83,7 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  padding: 2%;
 }
 
 .redirection {
@@ -124,7 +121,8 @@ body {
 @media only screen and (max-width: 768px) {
   .hero-buttons {
     align-items: center;
-    padding: 9px 15px;
-    margin: auto;
+  }
+  .about-title {
+    font-size: 25px;
   }
 }
