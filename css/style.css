@@ -17,6 +17,9 @@ body {
     linear-gradient(to right, #928dab, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+h1 {
+  font-size: 2.6rem;
+}
 .bg-dark {
   transition: 500ms ease;
   background: rgba(85, 104, 189, 0.938) !important;
@@ -37,7 +40,7 @@ body {
 }
 
 .hero-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Advent Pro", sans-serif;
   font-size: 20px;
 }
 
@@ -55,10 +58,13 @@ body {
 .button:hover {
   transform: scale(1.12);
 }
+.hero-buttons {
+  margin-top: 8%;
+  margin-left: -10%;
+}
 
 .about-title {
   font-family: "Advent Pro", sans-serif;
-
   padding: 50px;
   font-size: 60px;
   text-align: center;
@@ -68,7 +74,7 @@ body {
   font-family: "Baloo Tamma 2", cursive;
   margin-top: 5%;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .register {
@@ -119,10 +125,92 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .hero {
+    height: 120vh;
+  }
+  .button {
+    padding: 10px 18px;
+  }
   .hero-buttons {
     align-items: center;
   }
   .about-title {
     font-size: 25px;
   }
+  .fa {
+    padding: 12px;
+    font-size: 20px;
+    margin: 12% 0 !important;
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 2%;
+  margin-top: 12%;
+  text-decoration: none !important;
+  border-radius: 50%;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.99;
+  color: blue;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}
+.fa-whatsapp {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-telegram {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #bc4e9c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f80759,
+    #bc4e9c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f80759,
+    #bc4e9c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
 }
