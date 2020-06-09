@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTutorsHub | Platform to Find your Tutors and Students</title>
+    <!-- Bootstrap Links -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/form.css" />
+    <!-- Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          data-aos="fade-right"
+          data-aos-delay="80"
+          data-aos-duration="800"
+          >MyTutorsHub</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto nav-elements">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#register">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container register">
+      <div class="row">
+        <div class="col-md-3 register-left">
+          <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+          <h3>MyTutorsHub</h3>
+          <p>Dont Worry your Data is Kept Safe!</p>
+        </div>
+        <div class="col-md-9 register-right">
+          <form action="">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <h3 class="register-heading">Register as a Student</h3>
+                <div class="row register-form">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Student Name *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Parent/Guardian Name *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Current Studying Institution*"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Subjects Need to be Tutored *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Bugdet per Subject *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Flexible Timings for Tution *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <b>Tutor Gender Preference *</b>
+                      <div class="maxl">
+                        <label class="radio inline">
+                          <input
+                            type="radio"
+                            name="gender"
+                            value="male"
+                            checked
+                          />
+                          <span> Male </span>
+                        </label>
+                        <label class="radio inline">
+                          <input type="radio" name="gender" value="female" />
+                          <span>Female </span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <b>Tution Mode *</b>
+                      <div class="maxl">
+                        <label class="radio inline">
+                          <input
+                            type="radio"
+                            name="tution"
+                            value="online"
+                            checked
+                          />
+                          <span> Online Tution</span>
+                        </label>
+                        <label class="radio inline">
+                          <input type="radio" name="tution" value="home" />
+                          <span>Home Tution </span>
+                        </label>
+                        <label class="radio inline">
+                          <input type="radio" name="tution" value="both" />
+                          <span>Both </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        minlength="10"
+                        maxlength="10"
+                        name="txtEmpPhone"
+                        class="form-control"
+                        placeholder="Your Phone (Whatsapp)*"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Preferred Area for Tutoring *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Address: House No./Door No. *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Road/Street name *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Landmark *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Area *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="State *"
+                        value=""
+                        name=""
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <input type="checkbox" required />
+                    <a
+                      data-toggle="collapse"
+                      href="#multiCollapseExample1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample1"
+                      >I Agree To Terms And Conditions</a
+                    >
+                    <div
+                      class="collapse multi-collapse"
+                      id="multiCollapseExample1"
+                    >
+                      <div class="card card-body">
+                        <ul>
+                          <li class="terms">
+                            A Tutor should possess with good academic
+                            qualification and teaching experience in the
+                            Categories/Syllabus and subjects (below 20 years age
+                            of Tutors are not allowed to register).
+                          </li>
+                          <li class="terms">
+                            MyTutorsHub.com will take all reasonable precautions
+                            to keep the details secure but will not be liable
+                            for unauthorized access to the information provided
+                            by Tutors.
+                          </li>
+                          <li class="terms">
+                            The tutors should submit latest Photograph, updated
+                            Resume, present residing address, valid personal
+                            Mobile number and E-mail ID to stay connected.
+                          </li>
+                          <li class="terms">
+                            MyTutorsHub.com never meets any tutor personally.
+                            Tutors should enrol on website by its online payment
+                            for subscription and check the latest Tutors jobs
+                            and contact directly student/parent. It never
+                            involves finalizing the Tuition fees and collecting
+                            Percentages from the Subscribed tutors. Tutors can
+                            negotiate to the Student/Parent directly to fix the
+                            tuition fee. We are not liable to the Tutor for any
+                            reimbursement to these Terms in the events of any
+                            cancellation of contract or Tuition in the midlist
+                            for any reason.
+                          </li>
+                          <li class="terms">
+                            MyTutorsHub.com management has the right blocking
+                            tutor's profile without giving prior notice, if any
+                            complaints from the Student/Parent for any
+                            incompetence, misappropriate behaviour, lack of
+                            punctuality etc.
+                          </li>
+                          <li class="terms">
+                            Additional accounts and misusing our website at
+                            personal use by tutors are restricted in our
+                            systems. Breaching of its constitutes principles may
+                            lead of cancelling the contract abruptly.
+                          </li>
+                          <li class="terms">
+                            However, MyTutorsHub.com advises to follow your own
+                            safety (at cross gender teaching, timing and
+                            locality) norms on tutoring with party. We are not
+                            liable for any kind of loss, whatsoever.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input type="submit" class="btnRegister" value="Register" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

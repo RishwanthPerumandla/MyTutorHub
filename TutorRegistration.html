@@ -24,6 +24,14 @@
       html,
       body {
         min-height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background: #00d2ff; /* fallback for old browsers */
+        background: url("../img/bg-pattern.png"),
+          -webkit-linear-gradient(to right, #928dab, #00d2ff); /* Chrome 10-25, Safari 5.1-6 */
+        background: url("../img/bg-pattern.png"),
+          linear-gradient(to right, #928dab, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
       body,
       div,
@@ -69,7 +77,7 @@
       }
       .banner {
         position: relative;
-        height: 300px;
+        height: 100px;
         background: #3494e6; /* fallback for old browsers */
         background: -webkit-linear-gradient(
           to right,
@@ -270,6 +278,22 @@
             />
           </div>
           <div class="item">
+            <label for="gender">Gender<span>*</span></label
+            ><br />
+            <input type="radio" name="gender" value="male" /> Male<br />
+            <input type="radio" name="gender" value="female" /> Female<br />
+          </div>
+          <div class="item">
+            <label for="age">Age<span>*</span></label>
+            <input
+              id="Age"
+              type="number"
+              name="entry.756906552"
+              placeholder="Enter your Age"
+              required
+            />
+          </div>
+          <div class="item">
             <label for="subject"
               >Subject Expertise(Ex: Science, Maths Etc)<span>*</span></label
             >
@@ -436,8 +460,6 @@
     </div>
 
     <script>
-
-
       function postToGoogle() {
         var field1 = $("#fname").val();
         var field2 = $("#subject").val();
@@ -493,7 +515,7 @@
           data: {
             "entry.467242977": field1,
             "entry.756906552": field2,
-            "entry.1877488761": field3, 
+            "entry.1877488761": field3,
             "entry.416974086": field4,
             "entry.505008509": field5,
             "entry.1143497317": field6,
@@ -508,14 +530,12 @@
           success: function (d) {},
           error: function (x, y, z) {
             $("#sucess-msg").show();
-            window.location='redirected.html';
+            window.location = "redirected.html";
           },
         });
 
         return false;
       }
-
-
     </script>
   </body>
 </html>
