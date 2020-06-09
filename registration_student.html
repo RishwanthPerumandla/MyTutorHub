@@ -15,6 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -55,7 +58,12 @@
       </div>
     </nav>
 
-    <div class="container register">
+    <div
+      class="container register"
+      data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+    >
       <div class="row">
         <div class="col-md-3 register-left">
           <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
@@ -356,5 +364,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
