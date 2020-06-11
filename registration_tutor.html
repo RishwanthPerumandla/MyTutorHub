@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
-    
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
@@ -25,7 +25,7 @@
       <div class="container">
         <a
           class="navbar-brand"
-          href="#"
+          href="index.html"
           data-aos="fade-right"
           data-aos-delay="80"
           data-aos-duration="800"
@@ -57,10 +57,21 @@
         </div>
       </div>
     </nav>
-
-    <div class="container register"  data-aos="fade-right"
-    data-aos-delay="100"
-    data-aos-duration="1000">
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <!-- <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none;"
+      onload="if(submitted) {window.location='redirected.html';}"
+    ></iframe> -->
+    <div
+      class="container register"
+      data-aos="fade-right"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+    >
       <div class="row">
         <div class="col-md-3 register-left">
           <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
@@ -68,7 +79,12 @@
           <p>Dont Worry your Data is Kept Safe!</p>
         </div>
         <div class="col-md-9 register-right">
-          <form action="">
+          <form
+            action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSd-nJuxtN67dsR5IoQek2tME7hs4zVMPb9RPhVEvQ8GiHnoFA/formResponse"
+            method="post"
+            target="hidden_iframe"
+            onsubmit="return validateForm(); "
+          >
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
@@ -82,10 +98,11 @@
                     <div class="form-group">
                       <input
                         type="text"
+                        id="name"
                         class="form-control"
                         placeholder="Full Name *"
                         value=""
-                        name=""
+                        name="entry.320401059"
                         required
                       />
                     </div>
@@ -95,7 +112,7 @@
                         class="form-control"
                         placeholder="Enter Your Age *"
                         value=""
-                        name=""
+                        name="entry.894911996"
                         required
                       />
                     </div>
@@ -105,7 +122,7 @@
                         class="form-control"
                         placeholder="Subject Expertise *"
                         value=""
-                        name=""
+                        name="entry.523358177"
                         required
                       />
                     </div>
@@ -115,7 +132,7 @@
                         class="form-control"
                         placeholder="Teaching Experience *"
                         value=""
-                        name=""
+                        name="entry.882273137"
                         required
                       />
                     </div>
@@ -125,7 +142,7 @@
                         class="form-control"
                         placeholder="Current Working Organisation*"
                         value=""
-                        name=""
+                        name="entry.1705710629"
                         required
                       />
                     </div>
@@ -135,7 +152,7 @@
                         class="form-control"
                         placeholder="Highest Qualification(Ex: M.Tech,B.Sc) *"
                         value=""
-                        name=""
+                        name="entry.1194483303"
                         required
                       />
                     </div>
@@ -144,14 +161,17 @@
                         <label class="radio inline">
                           <input
                             type="radio"
-                            name="gender"
+                            name="entry.2018596742"
                             value="male"
-                            checked
                           />
                           <span> Male </span>
                         </label>
                         <label class="radio inline">
-                          <input type="radio" name="gender" value="female" />
+                          <input
+                            type="radio"
+                            name="entry.2018596742"
+                            value="female"
+                          />
                           <span>Female </span>
                         </label>
                       </div>
@@ -163,18 +183,25 @@
                         <label class="radio inline">
                           <input
                             type="radio"
-                            name="tution"
+                            name="entry.626704634"
                             value="online"
-                            checked
                           />
                           <span> Online Tution</span>
                         </label>
                         <label class="radio inline">
-                          <input type="radio" name="tution" value="home" />
+                          <input
+                            type="radio"
+                            name="entry.626704634"
+                            value="home"
+                          />
                           <span>Home Tution </span>
                         </label>
                         <label class="radio inline">
-                          <input type="radio" name="tution" value="both" />
+                          <input
+                            type="radio"
+                            name="entry.626704634"
+                            value="both"
+                          />
                           <span>Both </span>
                         </label>
                       </div>
@@ -184,23 +211,24 @@
                     <div class="form-group">
                       <input
                         type="email"
+                        id="email"
                         class="form-control"
                         placeholder="Your Email *"
                         value=""
-                        name=""
+                        name="entry.1661202767"
                         required
                       />
                     </div>
                     <div class="form-group">
                       <input
                         type="text"
+                        id="phone"
                         minlength="10"
                         maxlength="10"
-                        name="txtEmpPhone"
                         class="form-control"
                         placeholder="Your Phone (Whatsapp)*"
                         value=""
-                        name=""
+                        name="entry.169192713"
                         required
                       />
                     </div>
@@ -210,7 +238,7 @@
                         class="form-control"
                         placeholder="Preferred Area for Tutoring *"
                         value=""
-                        name=""
+                        name="entry.1735787"
                         required
                       />
                     </div>
@@ -221,7 +249,7 @@
                         class="form-control"
                         placeholder="Address: House No./Door No. *"
                         value=""
-                        name=""
+                        name="entry.1392642449"
                         required
                       />
                     </div>
@@ -231,7 +259,17 @@
                         class="form-control"
                         placeholder="Road/Street name *"
                         value=""
-                        name=""
+                        name="entry.1616843069"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Landmark *"
+                        value=""
+                        name="entry.297115149"
                         required
                       />
                     </div>
@@ -241,7 +279,7 @@
                         class="form-control"
                         placeholder="Area *"
                         value=""
-                        name=""
+                        name="entry.2013230641"
                         required
                       />
                     </div>
@@ -249,9 +287,9 @@
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="City *"
+                        placeholder="City/Town *"
                         value=""
-                        name=""
+                        name="entry.1573326052"
                         required
                       />
                     </div>
@@ -261,7 +299,7 @@
                         class="form-control"
                         placeholder="State *"
                         value=""
-                        name=""
+                        name="entry.649479658"
                         required
                       />
                     </div>
@@ -336,7 +374,7 @@
                     </div>
                   </div>
 
-                  <input type="submit" class="btnRegister" value="Register" />
+                  <input type="submit" class="btnRegister" value="submit" />
                 </div>
               </div>
             </div>
@@ -351,8 +389,58 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script>
       AOS.init();
+      function validateName() {
+        var name = document.getElementById("name").value;
+        if (name.length == 0) {
+          alert("Name can't be blank");
+          return false;
+        }
+        if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+          alert("Please enter your correct name"); //Validation Message
+          return false;
+        }
+        return true;
+      }
 
-     
+      function validatePhone() {
+        var phone = document.getElementById("phone").value;
+        if (phone.length == 0) {
+          alert("Phone number can't be blank"); //Validation Message
+          return false;
+        }
+
+        if (!phone.match(/^[0]?[789]\d{9}$/)) {
+          alert("Please enter a correct phone number"); //Validation Message
+          return false;
+        }
+
+        return true;
+      }
+
+      function validateEmail() {
+        var email = document.getElementById("email").value;
+        if (email.length == 0) {
+          alert("Email can't be blank"); //Validation Message
+          return false;
+        }
+
+        if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+          alert("Please enter a correct email address"); //Validation Message
+          return false;
+        }
+
+        return true;
+      }
+
+      function validateForm() {
+        if (!validateName() || !validatePhone() || !validateEmail()) {
+          alert("Form not submitted"); //Validation Message
+          return false;
+        } else {
+          submitted = true;
+          return true;
+        }
+      }
     </script>
   </body>
 </html>
