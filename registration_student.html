@@ -25,7 +25,7 @@
       <div class="container">
         <a
           class="navbar-brand"
-          href="#"
+          href="index.html"
           data-aos="fade-right"
           data-aos-delay="80"
           data-aos-duration="800"
@@ -58,6 +58,12 @@
       </div>
     </nav>
 
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none;"
+      onload="if(submitted) {window.location='redirected.html';}"
+    ></iframe>
     <div
       class="container register"
       data-aos="fade-right"
@@ -71,7 +77,12 @@
           <p>Dont Worry your Data is Kept Safe!</p>
         </div>
         <div class="col-md-9 register-right">
-          <form action="">
+          <form
+            action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSd4SVpqq8PskSjREwnwkXV72aGQyNAq7pGICzKvMZOARkA9Ow/formResponse"
+            method="post"
+            target="hidden_iframe"
+            onsubmit="return validateForm();"
+          >
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
@@ -85,10 +96,11 @@
                     <div class="form-group">
                       <input
                         type="text"
+                        id="name"
                         class="form-control"
                         placeholder="Student Name *"
                         value=""
-                        name=""
+                        name="entry.1837340971"
                         required
                       />
                     </div>
@@ -98,7 +110,7 @@
                         class="form-control"
                         placeholder="Parent/Guardian Name *"
                         value=""
-                        name=""
+                        name="entry.440975416"
                         required
                       />
                     </div>
@@ -108,7 +120,7 @@
                         class="form-control"
                         placeholder="Current Studying Institution*"
                         value=""
-                        name=""
+                        name="entry.1653525082"
                         required
                       />
                     </div>
@@ -118,7 +130,7 @@
                         class="form-control"
                         placeholder="Subjects Need to be Tutored *"
                         value=""
-                        name=""
+                        name="entry.823447869"
                         required
                       />
                     </div>
@@ -128,7 +140,7 @@
                         class="form-control"
                         placeholder="Bugdet per Subject *"
                         value=""
-                        name=""
+                        name="entry.239457255"
                         required
                       />
                     </div>
@@ -139,7 +151,7 @@
                         class="form-control"
                         placeholder="Flexible Timings for Tution *"
                         value=""
-                        name=""
+                        name="entry.177882773"
                         required
                       />
                     </div>
@@ -149,14 +161,17 @@
                         <label class="radio inline">
                           <input
                             type="radio"
-                            name="gender"
+                            name="entry.1399575041"
                             value="male"
-                            checked
                           />
                           <span> Male </span>
                         </label>
                         <label class="radio inline">
-                          <input type="radio" name="gender" value="female" />
+                          <input
+                            type="radio"
+                            name="entry.1399575041"
+                            value="female"
+                          />
                           <span>Female </span>
                         </label>
                       </div>
@@ -168,18 +183,25 @@
                         <label class="radio inline">
                           <input
                             type="radio"
-                            name="tution"
+                            name="entry.1292636039"
                             value="online"
-                            checked
                           />
                           <span> Online Tution</span>
                         </label>
                         <label class="radio inline">
-                          <input type="radio" name="tution" value="home" />
+                          <input
+                            type="radio"
+                            name="entry.1292636039"
+                            value="home"
+                          />
                           <span>Home Tution </span>
                         </label>
                         <label class="radio inline">
-                          <input type="radio" name="tution" value="both" />
+                          <input
+                            type="radio"
+                            name="entry.1292636039"
+                            value="both"
+                          />
                           <span>Both </span>
                         </label>
                       </div>
@@ -189,23 +211,24 @@
                     <div class="form-group">
                       <input
                         type="email"
+                        id="email"
                         class="form-control"
                         placeholder="Your Email *"
                         value=""
-                        name=""
+                        name="entry.1208841744"
                         required
                       />
                     </div>
                     <div class="form-group">
                       <input
                         type="text"
+                        id="phone"
                         minlength="10"
                         maxlength="10"
-                        name="txtEmpPhone"
+                        name="entry.330281187"
                         class="form-control"
                         placeholder="Your Phone (Whatsapp)*"
                         value=""
-                        name=""
                         required
                       />
                     </div>
@@ -226,7 +249,7 @@
                         class="form-control"
                         placeholder="Address: House No./Door No. *"
                         value=""
-                        name=""
+                        name="entry.1950309874"
                         required
                       />
                     </div>
@@ -236,7 +259,7 @@
                         class="form-control"
                         placeholder="Road/Street name *"
                         value=""
-                        name=""
+                        name="entry.1380759700"
                         required
                       />
                     </div>
@@ -246,7 +269,7 @@
                         class="form-control"
                         placeholder="Landmark *"
                         value=""
-                        name=""
+                        name="entry.794962192"
                         required
                       />
                     </div>
@@ -256,7 +279,7 @@
                         class="form-control"
                         placeholder="Area *"
                         value=""
-                        name=""
+                        name="entry.1751020443"
                         required
                       />
                     </div>
@@ -266,7 +289,7 @@
                         class="form-control"
                         placeholder="City *"
                         value=""
-                        name=""
+                        name="entry.759648503"
                         required
                       />
                     </div>
@@ -276,7 +299,7 @@
                         class="form-control"
                         placeholder="State *"
                         value=""
-                        name=""
+                        name="entry.685676521"
                         required
                       />
                     </div>
@@ -298,53 +321,43 @@
                       <div class="card card-body">
                         <ul>
                           <li class="terms">
-                            A Tutor should possess with good academic
-                            qualification and teaching experience in the
-                            Categories/Syllabus and subjects (below 20 years age
-                            of Tutors are not allowed to register).
+                            Students are required to register in MyTutorshub by
+                            provide details.
                           </li>
                           <li class="terms">
-                            MyTutorsHub.com will take all reasonable precautions
-                            to keep the details secure but will not be liable
-                            for unauthorized access to the information provided
-                            by Tutors.
+                            If you find our service (Tutor)is satisfactory, you
+                            need enrol with 10% of First Month Tution Fee per
+                            subject.
                           </li>
                           <li class="terms">
-                            The tutors should submit latest Photograph, updated
-                            Resume, present residing address, valid personal
-                            Mobile number and E-mail ID to stay connected.
+                            Selected City and Locations will not be changed
+                            during the Membership period. Student / Parent can
+                            change the tutor according to their convenience, we
+                            don’t choose any tutor but money once paid will not
+                            be refunded.
                           </li>
                           <li class="terms">
-                            MyTutorsHub.com never meets any tutor personally.
-                            Tutors should enrol on website by its online payment
-                            for subscription and check the latest Tutors jobs
-                            and contact directly student/parent. It never
-                            involves finalizing the Tuition fees and collecting
-                            Percentages from the Subscribed tutors. Tutors can
-                            negotiate to the Student/Parent directly to fix the
-                            tuition fee. We are not liable to the Tutor for any
-                            reimbursement to these Terms in the events of any
-                            cancellation of contract or Tuition in the midlist
-                            for any reason.
+                            MyTutorsHub.com requests to negotiate tuition fees
+                            with tutors, It doesn’t involve in such activities.
                           </li>
                           <li class="terms">
-                            MyTutorsHub.com management has the right blocking
-                            tutor's profile without giving prior notice, if any
-                            complaints from the Student/Parent for any
-                            incompetence, misappropriate behaviour, lack of
-                            punctuality etc.
+                            Students/Parents are requested to give feedback of
+                            every tuition immediately to enhance the quality of
+                            services.
                           </li>
                           <li class="terms">
-                            Additional accounts and misusing our website at
-                            personal use by tutors are restricted in our
-                            systems. Breaching of its constitutes principles may
-                            lead of cancelling the contract abruptly.
+                            Student / Parent are requested to keep one set of ID
+                            proof of the tutor for security reasons.
                           </li>
                           <li class="terms">
-                            However, MyTutorsHub.com advises to follow your own
-                            safety (at cross gender teaching, timing and
-                            locality) norms on tutoring with party. We are not
-                            liable for any kind of loss, whatsoever.
+                            Student / Parent are informed to keep updating the
+                            progress by a CALL/SMS/EMAIL. If not, Tutors may not
+                            responsible of the Student’s progress.
+                          </li>
+                          <li>
+                            MyTutorsHub.com reserves all the rights to change
+                            all or any of these above mentioned terms and
+                            conditions with or without giving any prior notice.
                           </li>
                         </ul>
                       </div>
@@ -366,6 +379,67 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script>
       AOS.init();
+      function validateName() {
+        var name = document.getElementById("name").value;
+        if (name.length == 0) {
+          alert("Name can't be blank");
+          document.getElementById("name").focus();
+          return false;
+        }
+        if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+          alert("Please enter your correct name"); //Validation Message
+          document.getElementById("name").focus();
+          return false;
+        }
+        return true;
+      }
+
+      function validatePhone() {
+        var phone = document.getElementById("phone").value;
+        if (phone.length == 0) {
+          alert("Phone number can't be blank"); //Validation Message
+          document.getElementById("phone").focus();
+          return false;
+        }
+
+        if (!phone.match(/^[0]?[789]\d{9}$/)) {
+          alert("Please enter a correct phone number"); //Validation Message
+          document.getElementById("phone").focus();
+
+          return false;
+        }
+
+        return true;
+      }
+
+      function validateEmail() {
+        var email = document.getElementById("email").value;
+        if (email.length == 0) {
+          alert("Email can't be blank"); //Validation Message
+          document.getElementById("email").focus();
+
+          return false;
+        }
+
+        if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+          alert("Please enter a correct email address"); //Validation Message
+          document.getElementById("email").focus();
+
+          return false;
+        }
+
+        return true;
+      }
+
+      function validateForm() {
+        if (!validateName() || !validatePhone() || !validateEmail()) {
+          alert("Form not submitted"); //Validation Message
+          return false;
+        } else {
+          submitted = true;
+          return true;
+        }
+      }
     </script>
   </body>
 </html>
