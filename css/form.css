@@ -19,6 +19,13 @@ body {
 nav {
   background: rgba(85, 104, 189, 0.438) !important;
 }
+.nav-elements {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding-right: 5%;
+  color: #000;
+  font-family: "Advent Pro", sans-serif;
+}
 
 .register {
   background: -webkit-linear-gradient(left, #3931af, #00c6ff);
@@ -123,8 +130,13 @@ nav {
   margin-top: 8%;
   margin-bottom: -15%;
   color: #495057;
+  font-family: "Advent Pro", sans-serif;
 }
 
 .terms {
   font-family: "Montserrat", sans-serif;
+}
+.logo {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 700;
 }
